@@ -1,9 +1,6 @@
 package com.example.productservice.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
@@ -15,6 +12,17 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
+    @Transient
+    private String couponCode;
+
+
+    public String getCouponCode() {
+        return couponCode;
+    }
+
+    public void setCouponCode(String couponCode) {
+        this.couponCode = couponCode;
+    }
 
     public Long getId() {
         return id;
