@@ -1,0 +1,5 @@
+Centralized Coonfiguration
+
+1. Create Config Server
+2. Create Config Repo
+3. Create Config Client
